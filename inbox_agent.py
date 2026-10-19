@@ -12,9 +12,10 @@ AUDIT_FILE = Path("data") / "inbox_audit.jsonl"
 
 CATEGORIES = {
     "technical_support": [
-        "error", "bug", "broken", "not working", "issue",
-        "problem", "api", "setup", "configure",
-    ],
+    "error", "bug", "broken", "not working", "issue",
+    "problem", "api", "setup", "configure",
+    "critical", "system down", "security breach",
+],
     "billing": [
         "billing", "invoice", "payment", "refund", "charge",
         "subscription", "price",

@@ -1,0 +1,183 @@
+{
+  "task": "Task 2 - Inbox Agent",
+  "evaluation_type": "local code evaluation; mocked evidence and audit actions",
+  "total": 20,
+  "passed": 20,
+  "failed": 0,
+  "results": [
+    {
+      "case_id": "billing",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=billing/normal, actual=billing/normal"
+    },
+    {
+      "case_id": "technical",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=technical_support/normal, actual=technical_support/normal"
+    },
+    {
+      "case_id": "account",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=account/normal, actual=account/normal"
+    },
+    {
+      "case_id": "sales",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=sales/normal, actual=sales/normal"
+    },
+    {
+      "case_id": "general",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=general/normal, actual=general/normal"
+    },
+    {
+      "case_id": "urgent",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=billing/high, actual=billing/high"
+    },
+    {
+      "case_id": "critical",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=technical_support/high, actual=technical_support/high"
+    },
+    {
+      "case_id": "security",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=technical_support/high, actual=technical_support/high"
+    },
+    {
+      "case_id": "normal",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=sales/normal, actual=sales/normal"
+    },
+    {
+      "case_id": "subscription",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=billing/normal, actual=billing/normal"
+    },
+    {
+      "case_id": "permissions",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=account/normal, actual=account/normal"
+    },
+    {
+      "case_id": "setup",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=technical_support/normal, actual=technical_support/normal"
+    },
+    {
+      "case_id": "refund",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=billing/normal, actual=billing/normal"
+    },
+    {
+      "case_id": "purchase",
+      "passed": true,
+      "checks": {
+        "category": true,
+        "priority": true
+      },
+      "details": "expected=sales/normal, actual=sales/normal"
+    },
+    {
+      "case_id": "empty",
+      "passed": true,
+      "checks": {
+        "empty_rejected": true
+      },
+      "details": ""
+    },
+    {
+      "case_id": "review_no_evidence",
+      "passed": true,
+      "checks": {
+        "human_review_required": true
+      },
+      "details": ""
+    },
+    {
+      "case_id": "review_api_down",
+      "passed": true,
+      "checks": {
+        "human_review_required": true
+      },
+      "details": ""
+    },
+    {
+      "case_id": "source_citation",
+      "passed": true,
+      "checks": {
+        "source_preserved": true
+      },
+      "details": ""
+    },
+    {
+      "case_id": "approval",
+      "passed": true,
+      "checks": {
+        "decision_recorded": true
+      },
+      "details": ""
+    },
+    {
+      "case_id": "rejection",
+      "passed": true,
+      "checks": {
+        "decision_recorded": true
+      },
+      "details": ""
+    }
+  ]
+}

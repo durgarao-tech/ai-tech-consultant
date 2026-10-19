@@ -92,3 +92,22 @@ This separate abstention check passed. It is not included in the 20-case retriev
 ### Limitations
 
 These cases evaluate basic keyword matching, not semantic retrieval or full answer correctness. The two apparent keyword-criterion failures need review. Live Claude answer generation could not be validated because the Anthropic API account had insufficient credits. No live Claude success is claimed.
+
+## Task 2 — Inbox Agent Evaluation (19 October 2026)
+
+Evaluation script: `eval_task2.py`
+Machine-readable results: `task2_eval_results.json`
+
+- Evaluation cases: 20
+- Final passed: 20
+- Final failed: 0
+- Final observed pass rate: 100%
+- Existing unit tests: 6 passed
+
+### Improvement identified
+
+The initial evaluation passed 18 of 20 cases. The `critical` and `security` cases received high priority but were incorrectly classified as `general`. Adding `critical`, `system down`, and `security breach` to the technical-support keywords resolved both failures. The evaluation was rerun and all 20 cases passed.
+
+### Evaluation scope and limitations
+
+These are local code-level checks using predefined email examples, mocked evidence for selected scenarios, and temporary audit files. They do not demonstrate live Claude-generated replies, production email integration, or end-to-end performance with a live Knowledge Brain API. The draft remains a template requiring human review; emails are not sent automatically.
