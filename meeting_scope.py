@@ -50,9 +50,11 @@ def extract_requirements(transcript, meeting_name="Meeting 1"):
             "meeting": meeting_name,
             "source_line": line_number,
             "source_text": text,
-            "type": "needs_review",
+             "type": "needs_review",
+            "classification": "unclassified_needs_review",
             "requirement": text,
             "confidence": "not_assessed",
+            "classification_requires_human_review": True,
         })
 
     return requirements

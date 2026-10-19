@@ -1,0 +1,109 @@
+{
+  "task": "Task 3 - Meeting to Scope",
+  "evaluation_type": "local code evaluation; mocked Knowledge Brain requests",
+  "total": 20,
+  "passed": 20,
+  "failed": 0,
+  "results": [
+    {
+      "case_id": "nonempty_transcript",
+      "passed": true,
+      "details": "requirements=1"
+    },
+    {
+      "case_id": "empty_transcript_rejected",
+      "passed": true,
+      "details": "Empty transcript rejected"
+    },
+    {
+      "case_id": "source_line_one",
+      "passed": true,
+      "details": "1"
+    },
+    {
+      "case_id": "source_line_multiple",
+      "passed": true,
+      "details": "[1, 2]"
+    },
+    {
+      "case_id": "requirements_marked_for_review",
+      "passed": true,
+      "details": "['needs_review']"
+    },
+    {
+      "case_id": "confidence_unassessed",
+      "passed": true,
+      "details": "['not_assessed']"
+    },
+    {
+      "case_id": "unchanged_meeting",
+      "passed": true,
+      "details": "[{'change': 'unchanged', 'source_line': 1, 'text': 'Customer: Manage users', 'previous_requirement_id': 'REQ-001'}]"
+    },
+    {
+      "case_id": "changed_meeting_requires_review",
+      "passed": true,
+      "details": "[{'change': 'new_or_changed_needs_review', 'proposed_id': 'REQ-002', 'source_line': 1, 'text': 'Customer: Search users', 'previous_version': None, 'requires_human_review': True}]"
+    },
+    {
+      "case_id": "estimate_two_requirements",
+      "passed": true,
+      "details": "{'status': 'preliminary', 'requirement_count': 2, 'assumed_hours_per_requirement': 4, 'estimated_hours': 8, 'assumption': 'The hours-per-requirement value is an illustrative assumption. A developer must review complexity, dependencies, and testing.', 'approval_required': True}"
+    },
+    {
+      "case_id": "estimate_preliminary_and_approval",
+      "passed": true,
+      "details": "{'status': 'preliminary', 'requirement_count': 1, 'assumed_hours_per_requirement': 4, 'estimated_hours': 4, 'assumption': 'The hours-per-requirement value is an illustrative assumption. A developer must review complexity, dependencies, and testing.', 'approval_required': True}"
+    },
+    {
+      "case_id": "zero_hours_rejected",
+      "passed": true,
+      "details": "Zero-hour assumption rejected"
+    },
+    {
+      "case_id": "negative_hours_rejected",
+      "passed": true,
+      "details": "Negative-hour assumption rejected"
+    },
+    {
+      "case_id": "empty_requirements_estimate",
+      "passed": true,
+      "details": "{'status': 'preliminary', 'requirement_count': 0, 'assumed_hours_per_requirement': 4, 'estimated_hours': 0, 'assumption': 'The hours-per-requirement value is an illustrative assumption. A developer must review complexity, dependencies, and testing.', 'approval_required': True}"
+    },
+    {
+      "case_id": "approval_no_external_action",
+      "passed": true,
+      "details": "{'decision': 'approved', 'external_action_taken': False, 'message': 'Decision recorded. No proposal was sent externally.'}"
+    },
+    {
+      "case_id": "rejection_no_external_action",
+      "passed": true,
+      "details": "{'decision': 'rejected', 'external_action_taken': False, 'message': 'Decision recorded. No proposal was sent externally.'}"
+    },
+    {
+      "case_id": "invalid_approval_rejected",
+      "passed": true,
+      "details": "Invalid decision rejected"
+    },
+    {
+      "case_id": "knowledge_api_success",
+      "passed": true,
+      "details": "{'status': 'success', 'results': [{'title': 'Guide', 'url': 'https://example.com'}]}"
+    },
+    {
+      "case_id": "knowledge_api_unavailable",
+      "passed": true,
+      "details": "{'status': 'unavailable', 'error': 'ConnectionError', 'results': []}"
+    },
+    {
+      "case_id": "fact_inference_distinction",
+      "passed": true,
+      "details": "classification=unclassified_needs_review"
+    },
+    {
+      "case_id": "requirement_source_text",
+      "passed": true,
+      "details": "{'id': 'REQ-001', 'meeting': 'Meeting 1', 'source_line': 1, 'source_text': 'Customer: Export reports to CSV', 'type': 'needs_review', 'classification': 'unclassified_needs_review', 'requirement': 'Customer: Export reports to CSV', 'confidence': 'not_assessed', 'classification_requires_human_review': True}"
+    }
+  ]
+}

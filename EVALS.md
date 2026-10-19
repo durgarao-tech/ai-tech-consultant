@@ -111,3 +111,22 @@ The initial evaluation passed 18 of 20 cases. The `critical` and `security` case
 ### Evaluation scope and limitations
 
 These are local code-level checks using predefined email examples, mocked evidence for selected scenarios, and temporary audit files. They do not demonstrate live Claude-generated replies, production email integration, or end-to-end performance with a live Knowledge Brain API. The draft remains a template requiring human review; emails are not sent automatically.
+
+## Task 3 — Meeting to Scope Evaluation (19 October 2026)
+
+Evaluation script: `eval_task3.py`
+Machine-readable results: `task3_eval_results.json`
+
+- Local evaluation cases: 20
+- Passed: 20
+- Failed: 0
+- Observed pass rate: 100%
+- Unit tests: 10 passed
+
+### Evaluation scope
+
+Cases cover transcript validation, source-line tracking, human-review flags, follow-up text comparison, estimate calculations and assumptions, approval/rejection audit safety, and Knowledge Brain API success/unavailable behavior using mocked requests.
+
+### Important limitations
+
+The fact-versus-inference test verifies that extracted requirements are marked `unclassified_needs_review` and require human review. It does not demonstrate automatic fact/inference classification. Requirements are currently created from transcript lines rather than robust semantic extraction. Follow-up comparison uses exact text matching and does not reliably identify changed versions, maintain full proposal history, or automatically re-estimate changed scope. Estimates use a simple hours-per-requirement assumption and require human review. Live Claude and production integration were not validated.
