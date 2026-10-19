@@ -1,0 +1,376 @@
+{
+  "evaluation_type": "Task 1 keyword retrieval",
+  "evaluated_at_utc": "2026-10-19T06:36:07.941750+00:00",
+  "api": "http://127.0.0.1:8000/search",
+  "total_cases": 20,
+  "passed": 17,
+  "failed": 3,
+  "errors": 0,
+  "results": [
+    {
+      "id": 1,
+      "name": "Users API management",
+      "query": "How to manage users with API calls",
+      "expected_terms": [
+        "Users API"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Users API - How to Manage Users with API Calls | Brilliant Directories Documentation | BD Support",
+        "Users Clicked Link API - How To Edit User Clicked Links With API Calls | Brilliant Directories Documentation | BD Support",
+        "Developer Hub » Generate and Manage API Keys | Brilliant Directories Documentation | BD Support",
+        "API Reference - Users | Brilliant Directories Documentation | BD Support",
+        "Member API - How to Edit Member Data with API Calls | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Users API reference",
+      "query": "API Reference Users",
+      "expected_terms": [
+        "API Reference",
+        "Users API"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "API Reference - Users | Brilliant Directories Documentation | BD Support",
+        "API Reference - Users Clicked Link | Brilliant Directories Documentation | BD Support",
+        "API Reference - Users Reviews | Brilliant Directories Documentation | BD Support",
+        "API Reference - Users Portfolio Tags | Brilliant Directories Documentation | BD Support",
+        "API Reference - Users Activity Log | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "API key setup",
+      "query": "How to generate and manage API keys",
+      "expected_terms": [
+        "API Keys",
+        "API Key"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Developer Hub » Generate and Manage API Keys | Brilliant Directories Documentation | BD Support",
+        "Generate API Key - API Documentation | Brilliant Directories Documentation | BD Support",
+        "Users API - How to Manage Users with API Calls | Brilliant Directories Documentation | BD Support",
+        "API Reference - API Keys | Brilliant Directories Documentation | BD Support",
+        "API Reference - Getting Started | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Email management",
+      "query": "How to manage email accounts and email templates",
+      "expected_terms": [
+        "Email Management"
+      ],
+      "status": "FAIL",
+      "reason": "Expected keywords not found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Manage Your Website's Email Accounts With Microsoft 365 | Brilliant Directories Documentation | BD Support",
+        "Managing and Editing Email Templates | Brilliant Directories Documentation | BD Support",
+        "Allowing Multiple Accounts Under Same Email Address | Brilliant Directories Documentation | BD Support",
+        "Emails » Email Accounts | Brilliant Directories Documentation | BD Support",
+        "How To Setup A Third Party Email Application To Access The Email Accounts | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "User consent",
+      "query": "How to configure user consent GDPR compliance",
+      "expected_terms": [
+        "User Consent"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "User Consent Tools (GDPR Compliance) | Brilliant Directories Documentation | BD Support",
+        "Install User Consent Tools (GDPR) - Dashboard Installer | Brilliant Directories Documentation | BD Support",
+        "Europe's General Data Protection Regulation (GDPR) Compliance | Brilliant Directories Documentation | BD Support",
+        "Europe's General Data Protection Regulation (GDPR) Compliance | Brilliant Directories Documentation | BD Support",
+        "How to Add Cookie Consent | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Billing management",
+      "query": "How to manage billing and payments",
+      "expected_terms": [
+        "Billing"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Brilliant Directories Mobile App: Manage Your Website From Anywhere | Brilliant Directories Documentation | BD Support",
+        "Manage Your Website's Email Accounts With Microsoft 365 | Brilliant Directories Documentation | BD Support",
+        "Setting up Recurring Payments | Brilliant Directories Documentation | BD Support",
+        "Manual Billing Management - Accept Cash, Bank Transfers, or Unsupported Payment Gateways | Brilliant Directories Documentation | BD Support",
+        "Google Maps Issues: Billing Errors | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Membership payments",
+      "query": "How to accept member payments",
+      "expected_terms": [
+        "Payment",
+        "Billing"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Manual Billing Management - Accept Cash, Bank Transfers, or Unsupported Payment Gateways | Brilliant Directories Documentation | BD Support",
+        "What Happens When a Member Accepts or Purchases a Lead? | Brilliant Directories Documentation | BD Support",
+        "Member Leads » Lead Settings » Form Settings | Brilliant Directories Documentation | BD Support",
+        "Member Leads » Lead Settings » Receiving Direct Leads Settings | Brilliant Directories Documentation | BD Support",
+        "How To Manually Bill A Member / Create A Subscription For A Member | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "User profiles",
+      "query": "How to manage user profile information",
+      "expected_terms": [
+        "User",
+        "Profile"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "User Stats: Displaying Profile Statistics in Emails Using Variables | Brilliant Directories Documentation | BD Support",
+        "Content » Manage Posts | Brilliant Directories Documentation | BD Support",
+        "Brilliant Directories Mobile App: Manage Your Website From Anywhere | Brilliant Directories Documentation | BD Support",
+        "Post and Manage Reviews from Members Perspective | Brilliant Directories Documentation | BD Support",
+        "How To Manage Leads Sent To Claim Listings | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Search directory",
+      "query": "How to configure directory search",
+      "expected_terms": [
+        "Search"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Search Results Cache System - Dashboard Installer | Brilliant Directories Documentation | BD Support",
+        "Expanded Keyword Search | Brilliant Directories Documentation | BD Support",
+        "Design Settings » Search Results Pages | Brilliant Directories Documentation | BD Support",
+        "My Members »  Search Members »  Actions Dropdown | Brilliant Directories Documentation | BD Support",
+        "Setup Essentials - Required Steps to Setup the Directory | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Website settings",
+      "query": "How to manage website settings",
+      "expected_terms": [
+        "Website",
+        "Settings"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Manage Your Website's Email Accounts With Microsoft 365 | Brilliant Directories Documentation | BD Support",
+        "Brilliant Directories Mobile App: Manage Your Website From Anywhere | Brilliant Directories Documentation | BD Support",
+        "Design Settings » Homepage » Select Content to Display » About Website and Join Offer | Brilliant Directories Documentation | BD Support",
+        "API Reference - Website Settings | Brilliant Directories Documentation | BD Support",
+        "How Does Auto-Matching Work? (Lead Settings » General Settings) | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "API authentication",
+      "query": "How to authenticate API requests with API keys",
+      "expected_terms": [
+        "API",
+        "Key"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Developer Hub » Generate and Manage API Keys | Brilliant Directories Documentation | BD Support",
+        "API Reference - API Keys | Brilliant Directories Documentation | BD Support",
+        "API Reference - Getting Started | Brilliant Directories Documentation | BD Support",
+        "API Reference - Users | Brilliant Directories Documentation | BD Support",
+        "API Reference - Backup History | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Create users",
+      "query": "How to create users through the API",
+      "expected_terms": [
+        "Users API"
+      ],
+      "status": "FAIL",
+      "reason": "Expected keywords not found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "How to \"CREATE\" reviews through the API using Zapier | Brilliant Directories Documentation | BD Support",
+        "How to \"CREATE\" a lead through the API using Zapier | Brilliant Directories Documentation | BD Support",
+        "API Reference - Users | Brilliant Directories Documentation | BD Support",
+        "How to \"DELETE\" reviews through the API using Zapier | Brilliant Directories Documentation | BD Support",
+        "How to \"DELETE\" a Member through the API using Zapier | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Update users",
+      "query": "How to update users through API calls",
+      "expected_terms": [
+        "Users API"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Users API - How to Manage Users with API Calls | Brilliant Directories Documentation | BD Support",
+        "Users Clicked Link API - How To Edit User Clicked Links With API Calls | Brilliant Directories Documentation | BD Support",
+        "API Reference - Users | Brilliant Directories Documentation | BD Support",
+        "Member API - How to Edit Member Data with API Calls | Brilliant Directories Documentation | BD Support",
+        "Leads API - How to Edit Lead Data with API Calls | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Delete users",
+      "query": "How to delete users through API calls",
+      "expected_terms": [
+        "Users API"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Users API - How to Manage Users with API Calls | Brilliant Directories Documentation | BD Support",
+        "Users Clicked Link API - How To Edit User Clicked Links With API Calls | Brilliant Directories Documentation | BD Support",
+        "How to \"DELETE\" reviews through the API using Zapier | Brilliant Directories Documentation | BD Support",
+        "How to \"DELETE\" a Member through the API using Zapier | Brilliant Directories Documentation | BD Support",
+        "How to \"DELETE\" Member Posts through the API using Zapier | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Search users",
+      "query": "How to search users using the API",
+      "expected_terms": [
+        "Users API"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Users API - How to Manage Users with API Calls | Brilliant Directories Documentation | BD Support",
+        "API Reference - Users | Brilliant Directories Documentation | BD Support",
+        "How to Update Member Data Using API: Google Sheets Example | Brilliant Directories Documentation | BD Support",
+        "How to Update Post Data Using API: Google Sheets Example | Brilliant Directories Documentation | BD Support",
+        "How to \"CREATE\" reviews through the API using Zapier | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Email campaigns",
+      "query": "How to send an email campaign",
+      "expected_terms": [
+        "Email"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Can I Send A Mass Email Campaign Using Brilliant Directories? | Brilliant Directories Documentation | BD Support",
+        "Emails » Send Newsletter » New Email Newsletter | Brilliant Directories Documentation | BD Support",
+        "Email Management FAQ | Brilliant Directories Documentation | BD Support",
+        "API Reference - Email Templates | Brilliant Directories Documentation | BD Support",
+        "API Reference - Email Campaigns | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Manual payments",
+      "query": "How to accept cash or bank transfers",
+      "expected_terms": [
+        "Manual Billing",
+        "Billing"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Manual Billing Management - Accept Cash, Bank Transfers, or Unsupported Payment Gateways | Brilliant Directories Documentation | BD Support",
+        "How To Manually Bill A Member / Create A Subscription For A Member | Brilliant Directories Documentation | BD Support",
+        "List of Variables Per Webhook | Brilliant Directories Documentation | BD Support",
+        "How to Complete a Profile as a Member | Brilliant Directories Documentation | BD Support",
+        "Changelog - July 2026 | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Developer documentation",
+      "query": "Where can I find API developer documentation",
+      "expected_terms": [
+        "API"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Developer Hub » Generate and Manage API Keys | Brilliant Directories Documentation | BD Support",
+        "API Reference - Getting Started | Brilliant Directories Documentation | BD Support",
+        "Section: Developer Hub | Brilliant Directories Documentation | BD Support",
+        "API Overview and Testing the API From Admin Area | Brilliant Directories Documentation | BD Support",
+        "How to \"DELETE\" reviews through the API using Zapier | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Account dashboard",
+      "query": "How to use the account dashboard",
+      "expected_terms": [
+        "Account Dashboard"
+      ],
+      "status": "PASS",
+      "reason": "Expected keyword found in top-five results",
+      "result_count": 5,
+      "top_titles": [
+        "Account Dashboard | Brilliant Directories Documentation | BD Support",
+        "Account Dashboard: Activate Site | Brilliant Directories Documentation | BD Support",
+        "Account Dashboard » Notification Settings | Brilliant Directories Documentation | BD Support",
+        "Account Dashboard » Update Profile | Brilliant Directories Documentation | BD Support",
+        "Account Dashboard » Login Settings | Brilliant Directories Documentation | BD Support"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Unrelated question",
+      "query": "What is the weather on Mars today",
+      "expected_terms": [],
+      "status": "FAIL",
+      "reason": "Results returned; abstention must be checked through /answer",
+      "result_count": 5,
+      "top_titles": [
+        "Importing Tricks - Importing CSV Files With Special Characters | Brilliant Directories Documentation | BD Support",
+        "Supported Payment Gateways | Brilliant Directories Documentation | BD Support",
+        "How To Manually Bill A Member / Create A Subscription For A Member | Brilliant Directories Documentation | BD Support",
+        "06/16/17 - Software Updates | Brilliant Directories Documentation | BD Support",
+        "06/23/17 - Software Updates | Brilliant Directories Documentation | BD Support"
+      ]
+    }
+  ]
+}

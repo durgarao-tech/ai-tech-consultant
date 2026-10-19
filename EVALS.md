@@ -60,3 +60,35 @@ Each evaluation case should record its input, expected behavior, actual observed
 4. Evaluate requirement extraction, change detection, estimates, and traceability.
 5. Repeat live Claude evaluations only when API access is available.
 6. Record failures and limitations alongside passing results.
+
+## Task 1 — Actual Retrieval Evaluation (19 October 2026)
+
+Evaluation script: `eval_task1.py`
+Detailed machine-readable results: `task1_eval_results.json`
+
+- Total retrieval cases: 20
+- Passed under the script's keyword-matching criteria: 17
+- Failed: 3
+- Execution errors: 0
+- Observed baseline pass rate: 85% (17/20)
+
+### Observed failures
+
+1. Email management: the returned titles appeared relevant, but the expected keywords were not found by the evaluation criterion.
+2. Create users: the API Reference - Users article appeared in the results, but the expected keyword check failed.
+3. Unrelated weather question: keyword search returned unrelated support articles instead of an empty result.
+
+### Separate abstention check
+
+Query: `What is the weather on Mars today`
+
+Observed `/answer` response:
+- Status: `abstained`
+- Answer: `I could not find enough relevant evidence in the documentation.`
+- Sources: empty list
+
+This separate abstention check passed. It is not included in the 20-case retrieval score.
+
+### Limitations
+
+These cases evaluate basic keyword matching, not semantic retrieval or full answer correctness. The two apparent keyword-criterion failures need review. Live Claude answer generation could not be validated because the Anthropic API account had insufficient credits. No live Claude success is claimed.
