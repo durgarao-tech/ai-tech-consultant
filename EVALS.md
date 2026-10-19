@@ -2,7 +2,7 @@
 # Evaluation Report
 
 **Project:** AI Tech Consultant  
-**Evaluation date:** 18 October 2026  
+**Evaluation date:** 19 October 2026  
 **Environment:** Python virtual environment on Windows
 
 ## 1. Evaluation Approach
@@ -25,8 +25,8 @@ python -m unittest test_search.py test_claude_brain.py test_main.py test_securit
 |---|---|
 | Knowledge Brain search | Search behavior and result retrieval |
 | Claude integration | Empty input, missing evidence, configuration, mocked response, and API error handling |
-| API | Answer endpoint behavior and source handling |
-| Security | Prompt-injection safeguards, source references, and error-detail handling |
+| API | Answer endpoint behavior and source handling | 
+| Security | Prompt-injection safeguards, source references, and error-detail handling | 
 | Inbox Agent | Email classification, priority, validation, human review, and audit behavior |
 | Meeting to Scope | Transcript validation, source-line traceability, change detection, estimates, approvals, and API search |
 
@@ -40,26 +40,26 @@ python -m unittest test_search.py test_claude_brain.py test_main.py test_securit
 - **Prompt injection:** Existing tests check safeguards and prompt construction; they do not establish resistance to every attack.
 - **Estimates:** The current estimate is based on an explicit hours-per-requirement assumption, not validated project delivery data.
 
-## 4. Required Evaluation Plan
+## 4. Task-Level Evaluation Summary
 
-The assignment requires at least 20 evaluation cases for each task. The 28 automated unit tests above must not be counted as 28 complete task-level evaluation cases.
+Each task has a dedicated evaluation script and a recorded result file. These local results measure the specific checks implemented in each script; they do not establish production readiness or live AI accuracy.
 
-| Task | Evaluation cases needed | Status |
-|---|---:|---|
-| Task 1 — Knowledge Brain | At least 20 | Additional task-level cases and recorded outcomes needed |
-| Task 2 — Inbox Agent | At least 20 | Additional task-level cases and recorded outcomes needed |
-| Task 3 — Meeting to Scope | At least 20 | Additional task-level cases and recorded outcomes needed |
+| Task | Evaluation cases | Passed | Failed |
+|---|---:|---:|---:|
+| Task 1 — Knowledge Brain | 20 | 17 | 3 |
+| Task 2 — Inbox Agent | 20 | 20 | 0 |
+| Task 3 — Meeting to Scope | 20 | 20 | 0 |
 
-Each evaluation case should record its input, expected behavior, actual observed result, pass/fail status, and any notes. Results must come from actual execution; do not report unrun cases as passed.
-
+Task 1's three failures are documented below. Tasks 2 and 3 passed their current predefined local evaluation checks. All results are limited to the tested behavior and stated limitations. 
 ## 5. Next Improvements
 
-1. Add at least 20 task-specific evaluation cases per task.
-2. Measure search relevance, abstention, and source correctness.
-3. Evaluate email classification, urgency, evidence use, and human approval.
-4. Evaluate requirement extraction, change detection, estimates, and traceability.
-5. Repeat live Claude evaluations only when API access is available.
-6. Record failures and limitations alongside passing results.
+1. Improve search relevance and implement semantic or hybrid retrieval.
+2. Review the two Task 1 keyword-evaluation failures and improve the search criteria.
+3. Evaluate citation accuracy and prompt-injection resistance more thoroughly.
+4. Improve Inbox Agent drafts with evidence-grounded responses when live AI access is available.
+5. Improve requirement extraction, change detection, and proposal version history.
+6. Run live Claude evaluations when API credits are available.
+7. Continue recording failures, limitations, and actual test results.
 
 ## Task 1 — Actual Retrieval Evaluation (19 October 2026)
 

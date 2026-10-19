@@ -93,9 +93,9 @@ This is an initial prototype. It does not yet reliably distinguish facts from in
 
 ## 7. Evaluation and Known Limitations
 
-The combined local unit test suite passed 28 tests on 18 October 2026. These tests cover core behaviors across the three components, including error handling and approval controls.
+The combined local unit test suite passed 28 tests on 18 October 2026. Separate task-level evaluations were executed on 19 October 2026: Task 1 passed 17 of 20 cases, Task 2 passed 20 of 20 cases, and Task 3 passed 20 of 20 cases. These are local test results and do not establish live model accuracy or production readiness.
 
-The current implementation does not yet provide complete semantic/hybrid retrieval, verified live Claude output, fully evidence-grounded inbox replies, or a production-grade meeting-to-proposal workflow. The required 20 task-level evaluation cases per task must be executed and documented separately.
+The current implementation does not yet provide complete semantic/hybrid retrieval, verified live Claude output, fully evidence-grounded inbox replies, or a production-grade meeting-to-proposal workflow. The detailed results, failures, and limitations are documented in `EVALS.md`.
 
 ## 8. Future Work
 

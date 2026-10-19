@@ -13,8 +13,8 @@ An AI-assisted prototype with three components: Knowledge Brain, Inbox Agent, an
 - Includes abstention handling, security checks, and incremental ingestion.
 
 ### Task 2: Inbox Agent
-- Classifies incoming emails by category and priority.
-- Searches the Knowledge Brain API for relevant documentation.
+Classifies incoming emails by category and priority. 
+Searches the Knowledge Brain API for relevant documentation.
 - Creates reply drafts for human review.
 - Records review decisions in an audit log.
 - Does not send emails automatically.
@@ -48,7 +48,7 @@ Open a terminal in the project folder and activate the virtual environment:
 Install dependencies:
 
 ```powershell
-python -m pip install fastapi "uvicorn[standard]" httpx beautifulsoup4 lxml anthropic python-dotenv requests
+python -m pip install -r requirements.txt
 ```
 
 For live Claude API calls, create a `.env` file with your own API key:
@@ -91,9 +91,23 @@ python -m unittest test_search.py test_claude_brain.py test_main.py test_securit
 
 ## 5. Testing and Limitations
 
-The combined local test suite passed 28 tests on 18 October 2026. These tests validate prototype behavior and do not establish production readiness.
+The combined local unit test suite passed 28 tests on 18 October 2026.
 
-Live Claude generation has not been verified because the Anthropic API account has insufficient credits. Search currently uses keyword matching rather than a complete semantic and hybrid retrieval system. Email replies and scope proposals require human review. Further evaluation is needed for retrieval relevance, citation accuracy, prompt injection, requirement changes, and end-to-end workflows.
+Separate task-level evaluations were completed on 19 October 2026:
+
+- **Task 1 — Knowledge Brain:** 17 of 20 cases passed (85%).
+- **Task 2 — Inbox Agent:** 20 of 20 cases passed (100%).
+- **Task 3 — Meeting to Scope:** 20 of 20 cases passed (100%).
+
+These are local evaluation results and do not establish production readiness or live AI accuracy.
+
+**Known limitations:**
+
+- Live Claude generation has not been verified because the Anthropic API account has insufficient credits.
+- Search uses keyword matching; complete semantic and hybrid retrieval is not implemented.
+- Inbox replies use templates and require human review.
+- Meeting requirements need human review, and estimates are preliminary.
+- Citation accuracy, prompt-injection resistance, complex requirement changes, and end-to-end workflows need further testing. 
 
 ## 6. Project Files
 
